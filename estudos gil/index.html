@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Efeito de Texto animado</title>
+</head>
+<body>
+    <div class="txt-animado">
+        <h1>Efeito: </h1>
+    </div>
+    <script>
+        let i = 0;
+        let texto = "Texto Digitado";
+        let vel = 250;
+        let H1 = document.querySelector("h1");
+
+        function animacaoH1() {
+            if (i < texto.length) {
+                H1.innerHTML += texto.charAt(i);
+                i++;
+                setTimeout(animacaoH1, vel);
+            }
+        }
+
+        animacaoH1();
+    </script>
+</body>
+</html>

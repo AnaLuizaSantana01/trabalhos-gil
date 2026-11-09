@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.txt-animado{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: rgb(112, 11, 220) ;
+}
+h1{
+    color: #fff;
+    font-size:2rem ;
+    font-weight: 400;
+    text-transform: uppercase;
+}
